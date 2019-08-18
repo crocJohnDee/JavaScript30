@@ -1,0 +1,73 @@
+html {
+    background:  url(images/jeremy-thomas-rMmibFe4czY-unsplash.jpg);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    margin: 50px auto;
+    background-image: url(images/SeekPng.com_clock-png_166761.png);
+    background-size: cover;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.clock-face {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform: translateY(-3px);
+    /* account for the height of the clock hands */
+}
+
+.center {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 192px;
+    top: 195px;
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    /* change the position of turn axis */
+    transform-origin: 100%;
+}
+
+.hour-hand, .min-hand{
+    right: 50%;
+    background: black;
+}
+.hour-hand {
+    width: 90px;
+}
+.min-hand{
+    width: 120px
+}
+.second-hand{
+    right: 50%;
+    width: 140px;
+    height: 2px;
+}
+    
+
+
+
+
